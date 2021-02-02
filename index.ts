@@ -50,13 +50,13 @@ class ProcessHarService {
                    harRes.request.push(entry.request);
                    harRes.content.push(entry.response.content);
                 }
-                /* wsServer.clients.forEach(function each(client) {
-                    client.send("broadcast: url " + entry.request.url + " updated");
-                  }); */
-            }  
-            console.log(harRes);   
+               
+            } 
+           
             harRes.satusCount = status.length;
-            console.log(status)    
+            wsServer.clients.forEach(function each(client) {
+                client.send(JSON.stringify(harRes));
+              });    
         })
         .catch((reason)=>{
             console.log(reason)            
