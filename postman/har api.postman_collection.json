@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "e3c5f51d-54df-4351-8282-274e6d701dc9",
+		"name": "har api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/ProcessHar/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "harFile",
+							"type": "file",
+							"src": "/D:/myProjects2021/typescript/auth0.com.har"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/ProcessHar/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ProcessHar",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
