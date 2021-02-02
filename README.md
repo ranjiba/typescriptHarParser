@@ -1,9 +1,9 @@
 # typescriptHarParser
-QuickStart
-Development
-$ npm i
-$ npm run dev
-$npm run start
+QuickStart<br/>
+Development<br/>
+$ npm i<br/>
+$ npm run dev<br/>
+$npm run start<br/>
 
 
 
